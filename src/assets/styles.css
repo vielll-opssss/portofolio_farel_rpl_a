@@ -1,0 +1,136 @@
+@import
+url("https://fonts.googleapis.com/css2?family=Poppins:weight@300;400;500;600;700&display=swap");
+
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #f8fafcaa;
+    color: #1f2937;
+}
+
+.navbar {
+    position:fixed;
+    top: 0;
+    background: rgba(255, 255, 255, 0.166);
+    backdrop-filter: blur(12px);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 8px 30px rgba(0,0,0,.05);
+    z-index: 100;
+}
+
+.logo {
+    font-weight: 700;
+    color: #7725eb91;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.nav {
+    text-decoration: none;
+    color: #2c61b69e;
+    font-weight: 500;
+}
+
+.nav.active {
+    color: 2563eb;
+    border-bottom: 2px solid #0d57f798;
+}
+
+.content {
+    padding-top: 110px;
+}
+
+.section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.hero {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg,#7908db,#1b1ecc);
+    color: white;
+    text-align: center;
+}
+
+.hero h2 { font-size: 48px; }
+
+.hero p { margin: 15px 0 30px;}
+
+.btn {
+    background: rgb(206, 178, 178);
+    color: #1443a99c;
+    padding: 12px 28px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 15px 30px rgba(0,0,0,.06);
+    transition: .3s;
+}
+
+.card:hover { transform: translateY(-6px); }
+
+.icon { font-size: 42px; margin-bottom: 10px;}
+
+.form {
+    max-width: 450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea, button {
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+}
+
+button {
+    background: #4f738e;
+    color: white;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+button :hover { opacity: .9; }
+
+.footer {
+    text-align: center;
+    padding: 30px;
+    background: #1e293b;
+    color: white;
+}
