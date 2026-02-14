@@ -1,5 +1,5 @@
-import Hero from "../components/Hero";
-import SkillCard from "../components/SkillCard";
+import Hero from "../components/hero";
+import SkillCard from "../components/skillcard";
 
 export default function Home() {
   return (
